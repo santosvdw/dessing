@@ -1,4 +1,16 @@
-@extends('templates.template')
+<!DOCTYPE html>
+<html>
+<head>
+    @viteReactRefresh
+    @vite(['resources/scss/app.scss', 'resources/ts/index.tsx'])
+</head>
+<body>
+    <div id="react-app"></div>
+</body>
+</html>
+
+
+{{-- @extends('templates.template')
 
 @section('content')
 <header class="flex flex-col md:flex-row justify-between items-center p-4 md:p-8 w-[80vw] gap-8 mx-auto border-2">
@@ -18,4 +30,4 @@
   </div>
 </header>
 
-@endsection
+@endsection --}}
