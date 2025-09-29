@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
                 <h5>Dessing</h5>
             </div>
             <div className="footer_text">
-                <h4>Pagina's</h4>
+                <h6>Pagina's</h6>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
                 </ul>
             </div>
             <div className="footer_text">
-                <h4>Contactinformatie</h4>
+                <h6>Contactinformatie</h6>
                 <ul>
                     <li>Telefoonnummer: <a href="tel:+31612345678">+31612345678</a></li>
                     <li>Emailadres: <a href="mailto:info@vistraiteurdessing.nl">info@vistraiteurdessing.nl</a></li>
@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
                 </ul>
             </div>
             <div className="footer_text">
-                <h4>Social Media</h4>
+                <h6>Social Media</h6>
                 <ul>
                     <li><a href="/">Instagram</a></li>
                     <li><a href="/">Facebook</a></li>
