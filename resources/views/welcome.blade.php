@@ -11,9 +11,11 @@
 
   <meta name="description" content="Bij Vis & Traiteur Dessing draait alles om smaak en kwaliteit. We combineren het beste uit de zee met onze eigen recepten, zodat jij thuis zonder moeite iets heerlijks op tafel zet." />
   <meta name="author" content="Vis & Traiteur Dessing">
-    @viteReactRefresh
+    {{-- @viteReactRefresh --}}
     <link rel="stylesheet" href="build/assets/fonts.css">
-    @vite(['resources/scss/app.scss', 'resources/ts/index.tsx'])
+    <link rel="stylesheet" href="build/assets/app-DDUn5weN.css">
+    <script src="/build/assets/index-uaH3YgBg.js" defer></script>
+    {{-- @vite(['resources/scss/app.scss', 'resources/ts/index.tsx']) --}}
 
 </head>
 <body>
