@@ -1,0 +1,11 @@
+main {
+    width: 80vw;
+    left: 10vw;
+    position: relative;
+    p {
+        width: clamp(150px, 60%, 1200px);
+        ul {
+            margin-left: 5ch;
+        }
+    }
+}

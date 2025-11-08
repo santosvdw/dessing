@@ -1,0 +1,31 @@
+@use '../../globals/variables' as *;
+
+.product_card {
+    width: clamp(200px, 20%, 375px);
+    border: 1px solid red;
+    display: block;
+    
+    &_image {
+        border: 7.5px solid $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &_text {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 15px 0;
+    }
+
+    &_price {
+        margin-top: 5px;
+    }
+}

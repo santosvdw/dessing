@@ -1,0 +1,37 @@
+@use '../../globals/variables' as *;
+
+section.contact_info {
+    background-color: $blue;
+    width: 100%;
+    *, svg {
+        color: $white
+    }
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3rem 5rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: baseline;
+
+    .contact_info_block {
+        flex: 1 1 120px;
+    }
+
+    .contact_info_tekst p ul {
+        list-style: none;
+    }
+
+    .contact_info_titel {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5px;
+
+        svg {
+            height: calc(1.2 * $step-0);
+            width: calc(1.2 * $step-0);
+            line-height: 0;
+        }
+    }
+}

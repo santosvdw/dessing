@@ -1,0 +1,43 @@
+@use "../globals/variables" as *;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10vw;
+
+    gap: 2rem;
+
+    .header-text {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        max-width: 600px;
+        align-items: flex-start; 
+        h1 {
+            white-space: pre-line;
+        }
+
+        p {
+            width: clamp(120px, 60%, 600px);
+        }
+
+        button {
+            margin-top: 2rem;
+            align-self: flex-start; // keeps intrinsic width
+        }
+    }
+
+    .header-img {
+        flex: 1 1 300px; // <- laat het sneller krimpen
+        max-width: 30vw; // <- beperkt breedte op grote schermen
+        min-width: 100px; // <- voorkomt dat het te klein wordt
+        // width: clamp(350px, 40%, 1000px);
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

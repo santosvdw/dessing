@@ -1,0 +1,14 @@
+@use '../../globals/variables' as *;
+
+.categorie_banner {
+    width: 100%;
+    background-color: $blue;
+    color: $white;
+    display: grid;
+    place-items: center;
+    padding: 3vh 0;
+
+    h3 {
+        color: $white;
+    }
+}

@@ -1,0 +1,13 @@
+section.contact_tables {
+  // padding: 2.5vh 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 40px; // optional, helps spacing
+
+  @media screen and (max-width: 750px) {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}

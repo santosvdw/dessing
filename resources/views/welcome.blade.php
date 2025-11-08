@@ -1,8 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang=nl>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <title>Vis & Traiteur Dessing</title>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+
+  <meta name="description" content="Bij Vis & Traiteur Dessing draait alles om smaak en kwaliteit. We combineren het beste uit de zee met onze eigen recepten, zodat jij thuis zonder moeite iets heerlijks op tafel zet." />
+  <meta name="author" content="Vis & Traiteur Dessing">
     @viteReactRefresh
+    <link rel="stylesheet" href="build/assets/fonts.css">
     @vite(['resources/scss/app.scss', 'resources/ts/index.tsx'])
+
 </head>
 <body>
     <div id="react-app"></div>

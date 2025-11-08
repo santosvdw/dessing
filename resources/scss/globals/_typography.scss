@@ -1,5 +1,31 @@
-@use './fonts' as *;
-@use './variables' as *;
+@use "./variables" as *;
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("/fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("/fonts/Montserrat-SemiBold.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bodoni";
+    src: url("/fonts/BodoniFLF-Bold.woff2") format("woff2"),
+        url("/fonts/BodoniFLF-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 
 * {
     font-family: $body-font, Arial, Helvetica, sans-serif;
@@ -7,8 +33,17 @@
     line-height: 1.5;
 }
 
-h1, h2, h3 {
-    font-family: $header-font, 'Times New Roman', Times, serif;
+h1 {
+    line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    // font-family: $header-font, 'Times New Roman', Times, serif;
+    // font-family: serif;
+    font-family: "Bodoni";
 }
 
 // Base font size: scales from 11px → 18px
@@ -16,12 +51,12 @@ $base-size: clamp(11px, 1vw + 0.6rem, 18px);
 
 // Heading multipliers
 $scale: (
-  h6: 1.25,
-  h5: 1.5,
-  h4: 1.75,
-  h3: 2,
-  h2: 2.5,
-  h1: 3
+    h6: 1.25,
+    h5: 1.5,
+    h4: 1.75,
+    h3: 2,
+    h2: 2.5,
+    h1: 3,
 );
 
 // Type scale variables
@@ -38,63 +73,50 @@ $scale: (
 
 $step--2: clamp(0.434rem, 0.3507rem + 0.4104vw, 0.72rem);
 $step--1: clamp(0.5208rem, 0.4103rem + 0.5441vw, 0.9rem);
-$step-0: 16px;
+// $step-0: clamp(11px, 0.835rem + 0.0326vw, 16px);
+// 16px
+$step-0: clamp(0.6875rem, 0.5417rem + 0.6481vw, 1.125rem);
 $step-1: clamp(0.75rem, 0.5587rem + 0.9417vw, 1.4063rem);
 $step-2: clamp(0.9rem, 0.65rem + 1.2309vw, 1.7578rem);
 $step-3: clamp(1.08rem, 0.7543rem + 1.6033vw, 2.1973rem);
 $step-4: clamp(1.296rem, 0.8732rem + 2.0816vw, 2.7466rem);
 $step-5: clamp(1.5552rem, 1.0078rem + 2.6949vw, 3.4332rem);
 
-// Map HTML tags → scale variables
-$type-scale: (
-  h1: $step-5,
-  h2: $step-4,
-  h3: $step-3,
-  h4: $step-2,
-  h5: $step-1,
-  h6: $step-0,
-  "*":  $step--1,
-  "p":  $step--1,
-  "li":  $step--1,
-  "button":  $step--1,
-  "li a":  $step--1,
-);
-
-// // Generate CSS
-// @each $tag, $size in $type-scale {
-//   #{$tag} {
-//     font-size: $size;
-//     line-height: 1.4;
-//   }
-// }
-
 * {
-  font-size: $step-0;
+    font-size: $step-0;
 }
 
 h1 {
-  font-size: $step-5;
+    font-size: $step-5;
 }
 
 h2 {
-  font-size: $step-4;
+    font-size: $step-4;
 }
 
 h3 {
-  font-size: $step-3;
+    font-size: $step-3;
 }
 
 h4 {
-  font-size: $step-2;
+    font-size: $step-2;
 }
 
 h5 {
-  font-size: $step-1;
-  font-weight: 500;
+    font-size: $step-1;
+    font-weight: 500;
 }
 
 h6 {
-  font-size: $step-1;
-  font-weight: 400;
+    font-size: $step-1;
+    font-weight: 400;
 }
 
+.small-text {
+    font-size: $step--2;
+    line-height: 1rem;
+}
+
+.bold {
+    font-weight: 600;
+}

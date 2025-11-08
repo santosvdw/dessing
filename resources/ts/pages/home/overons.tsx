@@ -7,19 +7,26 @@ export const OverOns: React.FC = () => {
             <div className="over_ons_text">
                 <h2>Over ons</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium, alias. Modi, placeat tempore, aliquam hic cumque
-                    reiciendis ratione culpa quia officia, laborum eligendi eum?
-                    A eum unde quo ut? Ad.
+                    Bij Vis & Traiteur Dessing draait het om vakmanschap,
+                    kwaliteit en plezier in ons werk. Met een klein, hecht team
+                    staan we elke dag klaar om onze klanten iets lekkers mee te
+                    geven — van verse vis tot complete maaltijden.
                 </p>
-                <button>
-                    <Link to="/over-ons">Verder lezen</Link>
-                </button>
+                <div>
+                    <button>
+                        <Link to="/over-ons">Verder lezen</Link>
+                    </button>
+                </div>
             </div>
             <div className="over_ons_photo">
                 <div className="over_ons_photo_overlay"></div>
                 <div className="over_ons_photo_img">
-                    <img src="" alt="" />
+                    <img
+                        className="no-border"
+                        src="/imgs/thijs.webp"
+                        alt="Thijs Dessing"
+                        loading="lazy"
+                    />
                 </div>
             </div>
         </section>

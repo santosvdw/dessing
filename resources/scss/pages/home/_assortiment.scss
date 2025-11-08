@@ -1,0 +1,111 @@
+@use "../../globals/variables" as *;
+
+section.assortiment {
+    display: flex;
+    flex-direction: column;
+     overflow-x: hidden;
+    overflow-y: visible;
+    align-items: center;
+
+    // *{border:1px solid red;}
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+}
+
+.assortiment-content {
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+
+    .assortiment-overlay {
+        &#right {
+            right: 10vw;
+            transform: rotate(180deg);
+        }
+
+        &#left {
+            left: 10vw;
+        }
+        width: 20vw;
+        height: 100%;
+        // height: fit-content;
+        position: absolute;
+        z-index: 10;
+        background: #fdfcf7;
+        background: -webkit-linear-gradient(
+            90deg,
+            rgba(253, 252, 247, 1) 0%,
+            rgba(253, 252, 247, 1) 12%,
+            rgba(253, 252, 247, 0) 100%
+        );
+        background: -moz-linear-gradient(
+            90deg,
+            rgba(253, 252, 247, 1) 0%,
+            rgba(253, 252, 247, 1) 12%,
+            rgba(253, 252, 247, 0) 100%
+        );
+        background: linear-gradient(
+            90deg,
+            rgba(253, 252, 247, 1) 0%,
+            rgba(253, 252, 247, 1) 12%,
+            rgba(253, 252, 247, 0) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FDFCF7", endColorstr="#FDFCF7", GradientType=1);
+    }
+}
+
+.assortiment-cards {
+    width: 100%;
+    overflow-x: hidden; /* scroll wordt vervangen door animatie */
+    overflow-y: visible; /* scroll wordt vervangen door animatie */
+    display: flex;
+    margin-bottom: 1.5rem;
+
+    .cards-wrapper {
+        width: max-content;
+        display: flex;
+        animation: scroll-left 30s linear infinite;
+    }
+
+    .category_card {
+
+        display: flex;
+        margin-left: 2rem;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+            width: fit-content;
+        }
+
+        &_image {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border: 5px solid $blue;
+            width: 12rem;
+            aspect-ratio: 16/9;
+            margin-bottom: 0.5rem;
+            
+            img {
+                aspect-ratio: 16/9;
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(
+            -50%
+        ); /* schuif de eerste helft van de kaarten weg */
+    }
+}

@@ -12,7 +12,7 @@ export const CategoryCard: React.FC<ImageWithTextProps> = ({
     return (
         <div className="category_card">
             <div className="category_card_image">
-                <img src={src} alt={text} />
+                <img loading="lazy" src={src} alt={text} className="no-border" />
             </div>
             <p>{text}</p>
         </div>

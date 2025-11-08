@@ -12,10 +12,10 @@ export const SocialMedia: React.FC = () => {
             </h3>
             <div className="social_media_buttons">
                 <button>
-                    <a href="/">Instagram</a>
+                    <a href="https://www.instagram.com/vistraiteurdessing/#">Instagram</a>
                 </button>
                 <button>
-                    <a href="">Facebook</a>
+                    <a href="https://www.facebook.com/profile.php?id=61583418304061">Facebook</a>
                 </button>
             </div>
         </section>

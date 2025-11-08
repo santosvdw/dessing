@@ -1,0 +1,17 @@
+.paragraph_and_photo {
+    display: flex;
+    align-items: flex-start; // vertically centers text and image
+    justify-content: space-between; // keeps them apart
+    gap: 2rem; // optional: controls spacing between text and image
+
+    p {
+        flex: 2; // roughly 2/3 of the space (like grid 2 columns)
+    }
+
+    img {
+        flex: 1; // roughly 1/3 of the space
+        width: 20%; // same as before
+        height: auto;
+        object-fit: cover; // prevents distortion
+    }
+}

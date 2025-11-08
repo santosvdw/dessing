@@ -8,7 +8,7 @@ export const CategorieBanner: React.FC<Categorie> = ({
     text,
 }) => {
     return (
-        <div>
+        <div className="categorie_banner">
             <h3>{text}</h3>
         </div>
     );

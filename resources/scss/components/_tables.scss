@@ -1,0 +1,29 @@
+@use "../globals/variables" as *;
+
+table {
+    width: 100%; // span entire container
+    border-collapse: collapse;
+
+    tr {
+        display: flex;
+        justify-content: space-between; // spreads tds as far as possible
+        align-items: flex-start;
+        width: 100%; // full row width
+
+        & td:first-child {
+            width: 30%;
+        }
+    }
+    
+    td {
+        display: inline-block;
+        // flex: 1; // allow tds to grow
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        margin-bottom: 20px;
+    }
+}

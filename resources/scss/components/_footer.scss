@@ -1,0 +1,68 @@
+@use "../globals/variables" as *;
+
+footer {
+    background-color: $blue;
+    .content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 5vh 0;
+        gap: 1rem;
+    }
+    .links {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 7.5vw;
+    }
+    * {
+        color: $white;
+    }
+
+    a:hover {
+        color: $light-blue;
+    }
+
+    ul li {
+        margin-bottom: 0.4rem;
+        list-style: none;
+    }
+
+    .footer_text {
+        h6 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer_logo img {
+        width: 8rem;
+        height: auto;
+    }
+
+    .credits {
+        overflow: hidden;
+        .gradient-balk {
+            /* Rectangle 29 */
+            width: 100vw;
+            height: 10px;
+            background: linear-gradient(270deg, #69d249 0%, #2d6237 100%);
+        }
+
+        p#webverde {
+
+            padding: 1rem 5vw;
+            color: #2d6237;
+            background-color: $white;
+
+            a {
+                color: #2d6237;
+
+                &:hover {
+                    color: #69d249;
+                }
+            }
+            // color: #2d6237; /* fallback kleur */
+        }
+    }
+}

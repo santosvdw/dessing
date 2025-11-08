@@ -1,0 +1,27 @@
+@use "../globals/variables" as *;
+
+img {
+    border: 10px solid $blue;
+
+    &.no-border {
+        border: none;
+    }
+
+    &.small {
+        border: 5px solid $blue;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        // border: 7.5px solid $blue;
+        border: 3.5px solid $blue;
+        &.no-border {
+            border: none;
+        }
+
+        &.small {
+            border: 2.5px solid $blue;
+        }
+    }
+}

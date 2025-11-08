@@ -1,0 +1,24 @@
+@use "../globals/variables" as *;
+
+button {
+    border: none;
+    outline: none;
+    background-color: $blue;
+    padding: 0.6rem 0.8rem;
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+    &:hover {
+        background-color: $dark-blue;
+        a {color: $white;}
+        cursor: pointer;
+    }
+}
+
+a {
+    &:hover {
+        color: $light-blue;
+    }
+}

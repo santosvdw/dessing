@@ -1,0 +1,23 @@
+@use '../../globals/variables' as *;
+
+.menu-images {
+    border: 10px solid $blue;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 70vw;
+    img {
+        width: 100%;
+    }
+
+    &+button {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-images {
+        border: 3.5px solid $blue;
+    }
+}

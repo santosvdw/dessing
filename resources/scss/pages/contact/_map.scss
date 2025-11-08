@@ -1,0 +1,16 @@
+@use "../../globals/variables" as *;
+
+.map {
+    width: 100%;
+
+    iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+        border: 7.5px $blue solid;
+    }
+}
+@media screen and (max-width: 600px) {
+    .map iframe{
+        border: 3.5px solid $blue;
+    }
+}
